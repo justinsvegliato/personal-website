@@ -44,6 +44,8 @@ a {
   line-height: 68px;
   background-color: transparent !important;
   border-bottom: 4px solid transparent;
+  font-weight: 600;
+  letter-spacing: 1.5px;
 }
 
 .mdl-navigation__link:hover, .active {
@@ -147,12 +149,21 @@ a {
 }
 
 #photo {
-  width: 160px;
+  width: 190px;
   border-radius: 100px;
 }
 
-#description {
+#description, #contact {
   color: #7a7a7a;
+}
+
+#contact {
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact-detail {
+  color: #673ab7
 }
 
 .honor, .degree, .job {
@@ -161,7 +172,7 @@ a {
 }
 
 .date {
-	color: #673ab7
+  color: #673ab7
 }
 
 .social-media-icons {
@@ -199,52 +210,57 @@ a {
 }
 
 @media (max-width: 900px) {
-	#logo {
-	  font-size: 40px;
-	  letter-spacing: 3px;
-	}
+  #logo {
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-top: 100px;
+  }
 
-	#slogan {
-	  font-size: 16px;
-	  width: 85%;
-	}
+  #slogan {
+    font-size: 16px;
+    width: 85%;
+  }
 
-	#about {
-		text-align: center;
-	}
+  #about {
+    text-align: center;
+  }
 
-	#about .mdl-cell {
-		margin: auto auto;
-	}
+  #about .mdl-cell {
+    margin: auto auto;
+  }
 
-	#about #photo {
-		margin-bottom: 20px;
-	}
+  #about #photo {
+    margin-bottom: 20px;
+  }
 
-	.social-media-icon {
-		font-size: 2em;
-	}
+  .social-media-icon {
+    font-size: 2em;
+  }
 
-	#banner-separator {
-		width: 80%;
-	}
+  #banner-separator {
+    width: 80%;
+  }
 
-	.section-body {
-		width: 85%;
-	}
+  .section-body {
+    width: 85%;
+  }
 
-	.mdl-navigation__link {
+  .mdl-navigation__link {
     height: 0px;
     line-height: 0px;
     color: #fff !important;
-	}
+  }
 
-	.mdl-layout__drawer {
-		background-color: #2f2f2f;
-		border: black;
-	}
+  .mdl-layout__drawer {
+    background-color: #2f2f2f;
+    border: black;
+  }
 
-	#banner {
-		height: 600px;
-	}
+  #banner {
+    height: 660px;
+  }
+
+  .contact-detail {
+    width: 100%
+  }
 }
