@@ -45,7 +45,6 @@ a {
   line-height: 68px;
   background-color: transparent !important;
   border-bottom: 4px solid transparent;
-  font-weight: 600;
   letter-spacing: 1.5px;
 }
 
@@ -137,7 +136,6 @@ a {
 .section-body, .section-body p, .section-body li {
   font-size: 16px;
   color: #383a3c;
-  line-height: 30px;
   font-weight: 400;
 }
 
@@ -149,8 +147,12 @@ a {
   background-color: #e6e5e5;
 }
 
+#honors {
+  padding-bottom: 45px;
+}
+
 #photo {
-  width: 190px;
+  width: 180px;
   border-radius: 100px;
 }
 
@@ -201,7 +203,6 @@ a {
 
 #copyright {
   font: 16px 'Roboto', 'Helvetica', sans-serif;
-  font-weight: 300px;
   color: #383838;
   margin-bottom: 35px;
 }
