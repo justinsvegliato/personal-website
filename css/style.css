@@ -152,8 +152,13 @@ a {
 }
 
 #photo {
-  width: 180px;
+  width: 205px;
+  margin-top: 50px;
   border-radius: 100px;
+}
+
+#introduction {
+  color: #fff;
 }
 
 #description, #contact {
