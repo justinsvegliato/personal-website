@@ -1,0 +1,77 @@
+.mdl-layout-title {
+    float: left;
+    color: #fff;
+    padding-left: 4px !important;
+    margin-top: 30px;
+    font-size: 24px;
+}
+
+.mdl-navigation__link {
+    height: 0px;
+    line-height: 0px;
+    color: #fff !important;
+}
+
+.mdl-layout__drawer {
+    background-color: #2b2b2b;
+    border: black;
+}
+
+.section-body {
+    width: 90%;
+}
+
+#back-navigation-link {
+    padding-left: 5px !important;
+}
+
+#back-navigation-link:hover {
+    color: #fff;
+    font-weight: bold;
+}
+
+#back-icon {
+    float: left;
+    font-size: 30px;
+    color: #fff;
+    padding-top: 17px;
+}
+
+.topic-separator {
+    border-style: dashed;
+    border-color: #448aff;
+    margin-bottom: -12px;
+}
+
+.equation {
+    margin: 10px 40px;
+    font-size: 18px;
+    font-family: times;
+    font-style: italic;
+    color: #383a3c;
+}
+
+.inline-equation {
+    font-size: 18px;
+    font-family: times;
+    color: #383a3c;
+    font-style: italic;
+}
+
+.image-container {
+    text-align: center;
+}
+
+.fixed-image {
+    width: 350px;
+}
+
+#definition, #policies, #introduction {
+    background-color: #e6e5e5;
+}
+
+@media (max-width: 1024px) {
+    .mdl-layout-title {
+        line-height: 64px !important;
+    }
+}

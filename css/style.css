@@ -2,7 +2,7 @@ body {
   margin: 0;
 }
 
-a img{
+a img {
   border: 0px;
 }
 
@@ -143,11 +143,11 @@ a {
   background-color: #2b2b2b;
 }
 
-#research, #honors {
+#honors, #research {
   background-color: #e6e5e5;
 }
 
-#honors {
+#industry {
   padding-bottom: 45px;
 }
 
@@ -174,7 +174,7 @@ a {
   color: #3f51b5
 }
 
-.honor, .degree, .job {
+.honor, .degree, .job, .topic {
   color: #448aff;
   margin: 0px;
 }

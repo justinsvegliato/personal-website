@@ -1,26 +1,23 @@
-$(function() {
-  var CONTAINER_ELEMENT = '.mdl-layout__content';
-  var IDS = ['#banner', '#about', '#education', '#research', '#industry', '#honors'];
-
+function initialize_scroller(container, ids, jump) {
   var offsets = {};
-  IDS.forEach(function(id) {
+  ids.forEach(function (id) {
     offsets[id] = $(id).offset().top;
   });
 
-  $('a').click(function(){
-    $(CONTAINER_ELEMENT).animate({
-      scrollTop: $(CONTAINER_ELEMENT).scrollTop() + $(this.hash).offset().top - 55
+  $('a').click(function () {
+    $(container).animate({
+      scrollTop: $(container).scrollTop() + $(this.hash).offset().top - 55
     }, 1000, 'swing');
     return false;
   });
 
-  $(CONTAINER_ELEMENT).on('scroll', function() {
-    IDS.forEach(function(id) {
+  $(container).on('scroll', function () {
+    ids.forEach(function (id) {
       var offset = offsets[id];
-      if ($(CONTAINER_ELEMENT).scrollTop() + 80 >= offset) {
+      if ($(container).scrollTop() + jump >= offset) {
         $('a').removeClass('active');
         $('a[href*=' + '"' + id + '"]').addClass('active');
       }
     });
   });
-});
+}
