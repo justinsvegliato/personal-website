@@ -64,6 +64,7 @@
 
 .fixed-image {
     width: 350px;
+    border: 1px #ccc solid;
 }
 
 #definition, #policies, #introduction {
