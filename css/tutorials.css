@@ -71,6 +71,14 @@
     background-color: #e6e5e5;
 }
 
+.mdl-mega-footer {
+    background-color: #e6e5e5;
+}
+
+.social-media-icon {
+    color: #383a3c;
+}
+
 @media (max-width: 1024px) {
     .mdl-layout-title {
         line-height: 64px !important;

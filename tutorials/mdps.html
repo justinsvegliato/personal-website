@@ -42,9 +42,10 @@
                 <h3>Introduction</h3>
                 <p>Suppose we're a treasure hunter (like Indiana Jones or something) searching for a famous treasure chest hidden somewhere in the world. For the sake of simplicity, let's just assume our world isn't the earth but instead a 5x5 grid. In order to search for the treasure, we can move from one cell to another by going north, east, south, or west. Moreover, while we don't know the world at all, we at least know that one of the cells contains the treasure. So, if we could navigate the world successfully and find the treasure, we would be immeasurably rich like Tywin Lannister and hopefully just as awesome. Unfortunately, there's a catch. While most of the cells in the world are empty, there are a few that have traps in them like a giant cat monster or a pit of spikes. If we were to accidentally move into any of those cells, we'd probably die a painful death.</p>
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/grid-world.png" /></p>
-                <p>Since we want to hit it rich and not die, we need to come up with a plan that leads to the treasure but avoids the traps. In our case, a plan is just the series of moves that we should take (e.g., north, east, south, or west) from our current location to the goal state (e.g., the treasure). After we complete every action in our plan, we'll end up at the treasure (which means we weren't a giant cat monster's supper). Sounds pretty easy, right? Just (1) come up with a plan that goes from our current location to the treasure, then (2) follow that plan by doing the suggested actions, and finally (3) reap the rewards of infinite wealth!</p>
+                <p>Since we want to hit it rich and not die, we need to come up with a plan that leads to the treasure but avoids the traps. In our case, a plan is just the series of moves that we should take (e.g., north, east, south, or west) from our current location to the goal state (e.g., the treasure). After we complete every action in our plan, we'll end up at the treasure (which means we weren't a giant cat monster's supper). Sounds pretty easy, right? Just (1) come up with a plan that goes from our current location to the treasure, then (2) follow that plan by doing the suggested actions, and finally (3) reap the reward of infinite wealth!</p>
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/optimal-plan.png" /></p>
-                <p>Sadly, it's not that easy. While it might be trivial in this simple problem, it's a lot harder in the real world to come up with a plan. In fact, for a harder problem, we need to represent it as mathematical model in order to make a plan. As a result, before we can deposit a nice, fat check into our bank accounts, we need to convert our treasure-hunting scenario into a mathematical model that we can solve using one of many different algorithms. For now, this is the big question we need to figure out: <strong>how do we come up with a mathematical model that we can use to snag the treasure without getting impaled by spikes or eaten by a giant cat monster?</strong>
+                <p>Sadly, it's not that easy. While it might be trivial in this simple problem, it's a lot harder in the real world to come up with a plan. In fact, if we had a harder problem, we'd need to represent it as mathematical model in order to make a plan. As a result, before we can deposit a nice, fat check into our bank accounts, we need to convert our treasure-hunting scenario into a mathematical model that we can solve using one of many different algorithms.</p>
+                <p>For now, this is the big question we need to figure out: <strong>how do we come up with a mathematical model that represents our scenario to snag the treasure without getting impaled by spikes or eaten by a giant cat monster?</strong>
             </div>
         </div>
 
@@ -62,7 +63,7 @@
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/grid-world-states.png" /></p>
 
                 <h5>Actions</h5>
-                <p>The set <span class="inline-equation">A</span> contains every action that the agent can take in the world. In our case, we have a set of five actions:</p>
+                <p>The set <span class="inline-equation">A</span> contains every action that the <strong>agent</strong> can take in the world. By the way, if you don't know what an agent is, it's just the actor in the world. It could be you, a robot, a car, or anything else that follows a plan. In any case, we have a set of five actions in our example:</p>
                 <div class="equation">A = {North, East, South, West, Stay}</div>
                 <p>Why do we have the <span class="inline-equation">Stay</span> action? This lets us sit around at the treasure once we've found it: we wouldn't want to move away from it once we've discovered the treasure after all of our hard work.</p>
                 <p>Keep in mind that each state has certain constraints that limit the actions available to the agent. For instance, if we were in the corner of the world, say, the top left corner, we couldn't move <span class="inline-equation">North</span> or <span class="inline-equation">West</span> since we're at the boundary of the world. We typically denote the actions available in a given state <span class="inline-equation">s</span> as <span class="inline-equation">A(s)</span>. So, if we're in the top right corner of the world, <span class="inline-equation">s20</span>, these would be the only actions available to the agent:</p>
@@ -86,7 +87,7 @@
                 <p>In short, here's how our world looks with rewards:</span></p>
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/grid-world-rewards.png" /></p>
 
-                <p>These four components completely specify the problem that we outlined in the first section! But all this does is give us a way to model the problem mathematically as an MDP. In other words, while we now have our scenario represented as an MDP, we still haven't found the plan that we should follow to get the treasure. How do we go about doing that? That is, what actions should we take to get the treasure and avoid dying? There are a lot of fancy things that we can do to find the best plan. However, before we talk about that, let's talk a little more about what plans are.</p>
+                <p>These four components completely specify the problem that we outlined in the first section! But all this does is give us a way to model the problem mathematically as an MDP. In other words, while we now have our scenario represented as an MDP, we still haven't found the plan that we should follow to get the treasure. How do we go about doing that? That is, what actions should we take to get the treasure and avoid dying? There are a lot of fancy things that we can do to get the best plan from our MDP. However, before we talk about that, let's talk a little more about what plans are.</p>
             </div>
         </div>
 
@@ -95,7 +96,7 @@
         <div id="policies" class="section">
             <div class="section-body">
                 <h3>Policies</h3>
-                <p>In planning, we typically formulate a plan as a <strong>policy</strong>. Well, what is a policy? It's just a map that associates every state of the world with a recommended action:</p>
+                <p>In planning, we usually formulate a plan as a <strong>policy</strong>. By the way, this is only kind of true, but let's roll with it for now. Anyway, what is a policy? It's just a map that associates every state of the world with a recommended action:</p>
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/policy.png" /></p>
                 <p>To be a little more formal, a policy <span class="inline-equation">&#960;</span> is a mapping between each state <span class="inline-equation">s</span> and an action <span class="inline-equation">a</span>:</p>
                 <div class="equation">&#960;(s) = a</div>
@@ -105,9 +106,31 @@
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/bad-plan.png" /></p>
                 <p>Notice how we walked right past the treasure. Yeah, that's not good. On the other hand, this is what we'd do if we followed the <strong>optimal policy</strong> (or the best policy we can have):</p>
                 <p class="image-container"><img class="fixed-image" src="../img/tutorials/optimal-plan.png" /></p>
-                <p>The big question in planning is now this: <em>after we model the problem as an MDP, how do we come up with the best policy amidst all of the crappy polices out there?</em> While there are many different approaches to this problem, the next tutorial will discuss <strong>value iteration</strong>, one of the most basic (but naive) algorithms for finding the optimal policy. Stay tuned!</p>
+                <p>The big question in planning is now this: <strong>after we model the problem as an MDP, how do we come up with the best policy amidst all of the crappy polices out there?</strong> While there are many different approaches to this question, the next tutorial will discuss <strong>value iteration</strong>, one of the most basic (and naive) algorithms for finding the optimal policy. Stay tuned!</p>
             </div>
         </div>
+
+        <hr class="topic-separator" />
+
+        <footer class="mdl-mega-footer">
+            <div class="mdl-mega-footer--middle-section">
+                <div class="social-media-icons">
+                    <a target="_blank" href="https://www.facebook.com/justin.svegliato">
+                        <i class="fa fa-facebook social-media-icon" aria-hidden="true"></i>
+                    </a>
+
+                    <a target="_blank" href="https://github.com/justinsvegliato">
+                        <i class="fa fa-github-alt social-media-icon" aria-hidden="true"></i>
+                    </a>
+
+                    <a target="_blank" href="https://www.linkedin.com/in/justinsvegliato">
+                        <i class="fa fa-linkedin social-media-icon last" aria-hidden="true"></i>
+                    </a>
+                </div>
+
+                <p id="copyright">© 2016 Justin Svegliato</p>
+            </div>
+        </footer>
     </div>
 </div>
 </body>
