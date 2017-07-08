@@ -22,87 +22,9 @@ a {
   color: #fff;
 }
 
-.mdl-header {
-  overflow: visible;
-  background-color: #161415 !important;
-  box-shadow: none;
-  border-bottom: none !important;
-}
-
-.navigation-container {
-  direction: rtl;
-  -webkit-order: 1;
-      -ms-flex-order: 1;
-          order: 1;
-  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1),
-      width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  margin: auto;
-}
-
-.mdl-navigation__link {
-  display: inline-block;
-  height: 60px;
-  line-height: 68px;
-  background-color: transparent !important;
-  border-bottom: 4px solid transparent;
-  letter-spacing: 1.5px;
-}
-
-.mdl-navigation__link:hover, .active {
-  border-bottom: 4px solid #448aff;
-}
-
-.mdl-mega-footer {
-  text-align: center;
-  background-color: #0f0f0f;
-}
-
-.mdl-layout__header-row {
-  padding: 0px !important;
-}
-
-#banner {
-  height: 740px;
-  background-color: #161415;
-}
-
-#logo {
-  font: 80px 'Roboto', 'Helvetica', sans-serif;
-  line-height: 1;
-  letter-spacing: 6px;
-  text-shadow: 0px 1px 3px rgba(0, 0, 0, .8);
-  padding-top: 160px;
-  font-weight: bolder;
-  color: #fff;
-}
-
-#slogan {
-  font: 20px 'Georgia', serif;
-  color: #3f51b5;
-  margin: 20px auto;
-  letter-spacing: 1px;
-  line-height: 1.75;
-  width: 55%;
-  text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
-}
-
-.theme {
-  color: #448aff;
-}
-
-#banner-separator {
-  width: 40%;
-  border-color: #2f2d2e;
-  margin: 25px auto 30px auto;
-}
-
-#down-button {
-  margin-top: 240px;
-}
-
 .section {
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 5px;
+  padding-bottom: 35px;
 }
 
 .section-body {
@@ -133,54 +55,94 @@ a {
   margin-bottom: 0px;
 }
 
+.section-body h4 {
+  margin-top: 0px;
+}
+
+.section-body h4, .section-body h5 {
+  margin-bottom: 0px;
+}
+
 .section-body, .section-body p, .section-body li {
   font-size: 16px;
   color: #383a3c;
-  font-weight: 400;
+  font-weight: 300;
 }
 
-#about {
-  background-color: #2b2b2b;
+.mdl-mega-footer {
+  text-align: center;
+  background-color: #0f0f0f;
 }
 
-#honors, #research {
-  background-color: #e6e5e5;
+.mdl-button {
+  margin-right: 10px;
+  margin-bottom: 13px;
 }
 
-#industry {
-  padding-bottom: 45px;
+#banner {
+  height: 275px;
+  padding-top: 125px;
+  background-image: url(../img/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
 }
 
-#photo {
-  width: 205px;
-  margin-top: 20px;
-  border-radius: 100px;
-}
-
-#introduction {
+#logo {
+  font: 48px 'Roboto', 'Helvetica', sans-serif;
+  line-height: 1;
+  letter-spacing: 3px;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+  font-weight: bold;
   color: #fff;
 }
 
-#description, #contact {
-  color: #bdbdbd;
+#slogan {
+  font: 22px 'Georgia', serif;
+  color: #909cdc;
+  letter-spacing: 1px;
+  line-height: 1.75;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 5px;
 }
 
-#contact {
-  text-align: center;
-  font-weight: bold;
+#about {
+  padding-bottom: 5px;
 }
 
-.contact-detail {
-  color: #3f51b5
+#photo {
+  width: 210px;
+  border-radius: 210px;
 }
 
-.honor, .degree, .job, .topic {
+#bio {
+  padding-top: 25px;
+}
+
+#education, #timeline, #projects {
+  background-color: #e6e5e5;
+}
+
+.highlight, .position {
+  color: #c100bb !important;
+}
+
+.honor, .degree, .author, .theme, .company {
   color: #448aff;
   margin: 0px;
 }
 
 .date {
-  color: #3f51b5
+  color: #3f51b5;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.code {
+  font-family: Consolas, Monaco, 'Andale Mono', monospace;
 }
 
 .social-media-icons {
@@ -190,8 +152,9 @@ a {
 
 .social-media-icon {
   color: #fff;
-  margin-right: 45px;
+  margin-right: 20px;
   font-size: 2.5em;
+  text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
 }
 
 .social-media-icon:hover {
@@ -202,8 +165,57 @@ a {
   margin-right: 0px !important;
 }
 
-#up-button {
-  margin-top: -55px;
+.seperator {
+  color: #383a3c;
+  font-weight: bold;
+}
+
+#performance-profile-photo {
+  height: 270px;
+}
+
+#pomdp-photo {
+  height: 225px;
+}
+
+#gstar-architecture-photo {
+  height: 220px;
+}
+
+#opensr-test-photo {
+  height: 240px;
+  border: 2px solid #ccc;
+}
+
+#lstm-photo {
+  height: 270px;
+}
+
+#performance-profile-photo {
+  width: 350px;
+}
+
+#mdp-photo {
+  height: 245px;
+}
+
+#heuristic-search-photo {
+  height: 220px;
+}
+
+#minimax-photo {
+  height: 210px;
+  margin-bottom: 10px;
+}
+
+#operating-system-photo {
+  height: 220px;
+  border: 2px solid #ccc;
+}
+
+#compiler-photo {
+  height: 215px;
+  border: 2px solid #ccc;
 }
 
 #copyright {
@@ -212,11 +224,10 @@ a {
   margin-bottom: 35px;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 1024px) {
   #logo {
     font-size: 40px;
     letter-spacing: 3px;
-    padding-top: 100px;
   }
 
   #slogan {
@@ -224,6 +235,10 @@ a {
     width: 85%;
   }
 
+  .section-body {
+    width: 85%;
+  }
+  
   #about {
     text-align: center;
   }
@@ -232,38 +247,43 @@ a {
     margin: auto auto;
   }
 
-  #about #photo {
-    margin-bottom: 20px;
+  #photo {
+    margin-top: 20px;
+  }
+
+  #honors .mdl-cell {
+    margin-bottom: 0px;
   }
 
   .social-media-icon {
     font-size: 2em;
   }
 
-  #banner-separator {
-    width: 80%;
+  .degree, .date, .company, .highlight {
+    display: block;
+    width: 100% !important;
+    text-align: left !important;
   }
 
-  .section-body {
-    width: 85%;
+  .event {
+    margin-bottom: 20px;
   }
 
-  .mdl-navigation__link {
-    height: 0px;
-    line-height: 0px;
-    color: #fff !important;
+  .seperator {
+    display: none;
   }
 
-  .mdl-layout__drawer {
-    background-color: #2f2f2f;
-    border: black;
+  figure img {
+    width: 100% !important;
+    height: auto !important;
+    max-width: 400px;
+  }
+  
+  .buttons {
+    text-align: center;
   }
 
-  #banner {
-    height: 660px;
-  }
-
-  .contact-detail {
-    width: 100%
+  .mdl-cell {
+    width: 100%;
   }
 }
