@@ -12,6 +12,10 @@ a {
   color: #448aff;
 }
 
+figure {
+  margin: 0px !important; 
+}
+
 ::-moz-selection {
   background-color: #6ab344;
   color: #fff;
