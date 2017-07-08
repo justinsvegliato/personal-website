@@ -8,12 +8,16 @@ a img {
 
 a {
   text-decoration: none;
-  font-weight: bold;
   color: #448aff;
 }
 
 figure {
   margin: 0px !important; 
+}
+
+figcaption {
+  font-size: 14px;
+  margin-top: 5px;
 }
 
 ::-moz-selection {
@@ -32,8 +36,9 @@ figure {
 }
 
 .section-body {
-  width: 70%;
+  width: 75%;
   margin: auto;
+  max-width: 1280px;
 }
 
 .section-body ul {
@@ -65,22 +70,23 @@ figure {
 
 .section-body h4, .section-body h5 {
   margin-bottom: 0px;
-}
-
-.section-body, .section-body p, .section-body li {
-  font-size: 16px;
-  color: #383a3c;
   font-weight: 300;
 }
 
-.mdl-mega-footer {
-  text-align: center;
-  background-color: #0f0f0f;
+.section-body, .section-body p, .section-body li {
+  font-size: 18px;
+  color: #383a3c;
+  font-weight: 300;
 }
 
 .mdl-button {
   margin-right: 10px;
   margin-bottom: 13px;
+}
+
+.mdl-mega-footer {
+  text-align: center;
+  background-color: #0f0f0f;
 }
 
 #banner {
@@ -114,7 +120,8 @@ figure {
 }
 
 #about {
-  padding-bottom: 5px;
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 #photo {
@@ -124,6 +131,10 @@ figure {
 
 #bio {
   padding-top: 25px;
+}
+
+#education {
+  line-height: 24px;
 }
 
 #education, #timeline, #projects {
@@ -143,6 +154,10 @@ figure {
   color: #3f51b5;
   padding-right: 20px;
   text-align: right;
+}
+
+.event {
+  margin-bottom: 15px;
 }
 
 .code {
