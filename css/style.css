@@ -9,6 +9,7 @@ a img {
 a {
   text-decoration: none;
   color: #448aff;
+  font-weight: normal;
 }
 
 figure {

@@ -244,7 +244,7 @@
                   <span class="author">Jeong-Hyon Hwang</span>
                 </div>
 
-                <p>We investigate how to best place the vertices of each graph snapshot across workers in a distributed dynamic graph database to speed up queries like PageRank and average degree. By extending G*, our very own distributed dynamic graph database, we examine how each query performs when the vertices of the graph snapshot are placed on a single worker or spread across every worker. It turns out that vertex placement has a big impact on query performance.</p>
+                <p>We investigate how to best place the vertices of each graph snapshot across workers in a distributed dynamic graph database to speed up queries like PageRank and average degree. By extending G*, our very own distributed dynamic graph database, we examine how each query performs when the vertices of the graph snapshot are placed on a single worker or spread across all of the workers. It turns out that vertex placement has a big impact on query performance.</p>
 
                 <div class="buttons">
                   <a href="http://www.labouseur.com/papers/graph-placement-in-a-data-center(working-paper).pdf" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Working Paper</a>
@@ -303,7 +303,7 @@
                   <span class="author">Sam Witty</span>
                 </div>
 
-                <p>We built Deep Jammer, a music generator that learns how to compose classical music by listening to 320 classical piano pieces. By using deep learning, particularly two LSTMs, it can learn the spatial and temporal patterns of classical music. In a survey of over 50 participants, the classical piano pieces composed by Deep Jammer scored a 7.5 rating compared to a piece by Bach that scored an 8.1 rating. Finally, to experiment with the transfer learning, we trained Deep Jammer on just twenty jazz piano pieces. While it wasn't perfect, it quicky picked up on the rhythm and sound of jazz.</p>
+                <p>We built Deep Jammer, a music generator that learns how to compose classical music by listening to 320 classical piano pieces. By using deep learning, specifically two LSTMs, it can learn the spatial and temporal patterns of classical music. In a survey of over 50 participants, the classical piano pieces composed by Deep Jammer scored a 7.5 rating compared to a piece by Bach that scored an 8.1 rating. Finally, to experiment with transfer learning, we trained Deep Jammer on just twenty jazz piano pieces. While it wasn't perfect, it quicky picked up on the rhythm and sound of jazz.</p>
 
                 <div class="buttons">
                   <a href="pdf/deep-jammer-report.pdf" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Report</a>
@@ -381,7 +381,7 @@
                   <span class="author">Martin Mena</span>
                 </div>
 
-                <p>We built a chess agent named Shallow Blue that uses minimax with alpha-beta pruning. The evaluation function incorporates many important dimensions of chess, such as piece development, material balance, mobility, and attack range. Luckily, Shallow Blue won an chess tournament that had over fifteen teams that built their own chess agents. To add to the fun, I also built a Connect Four agent and Tic-Tac-Toe agent using a similar method. </p>
+                <p>We built a chess agent named Shallow Blue that uses minimax with alpha-beta pruning. The evaluation function incorporates many important dimensions of chess, such as piece development, material balance, mobility, and attack range. Luckily, Shallow Blue won a chess tournament that had over fifteen teams that built their own chess agents. To add to the fun, I also built a Connect Four agent and a Tic-Tac-Toe agent using a similar method. </p>
 
                 <div class="buttons">
                   <a href="https://github.com/justinsvegliato/shallow-blue" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored last">Code</a>
@@ -406,7 +406,7 @@
                   <span class="author">Justin Svegliato</span>
                 </div>
 
-                <p>In an awesome class <a href="http://labouseur.com/courses/os/">CMPT 424</a> taught by <a href="http://labouseur.com/">Dr. Alan Labouseur</a>, I built SvegOS, a browser-based operating system from scratch. Just like any Unix operating system, you can manage files (<span class="code">create</span>, <span class="code">read</span>, <span class="code">update</span>, <span class="code">delete</span>, and <span class="code">ls</span>), load a program (<span class="code">load</span>), manage processes (<span class="code">run</span>, <span class="code">ps</span>, and <span class="code">kill</span>), and a lot more. To top it all off, the interface shows the CPU registers, the memory, the hard drive, and the state of every process, so you can follow exactly what the OS as it runs.</p>
+                <p>In an awesome class (<a href="http://labouseur.com/courses/os/">CMPT 424</a>) taught by <a href="http://labouseur.com/">Dr. Alan Labouseur</a>, I built SvegOS, a browser-based operating system from scratch. Just like any Unix operating system, you can manage files (<span class="code">create</span>, <span class="code">read</span>, <span class="code">update</span>, <span class="code">delete</span>, and <span class="code">ls</span>), load a program (<span class="code">load</span>), manage processes (<span class="code">run</span>, <span class="code">ps</span>, and <span class="code">kill</span>), and a lot more. To top it all off, the interface shows the CPU registers, the memory, the hard drive, and the state of every process, so you can follow my operating system as it runs.</p>
 
                 <div class="buttons">
                   <a href="http://labouseur.com/commondocs/operating-systems/SvegOS/public_html/index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Demo</a>
@@ -430,7 +430,7 @@
                 <div>
                   <span class="author">Justin Svegliato</span>
                 </div>
-                <p>In another great class <a href="http://labouseur.com/courses/compilers/">CMPT 432</a> taught by <a href="http://labouseur.com/">Dr. Alan Labouseur</a>, I built Svegliator, a compiler that compiles a <a href="http://labouseur.com/courses/compilers/grammar.pdf">C-like language</a> into <a href="http://labouseur.com/commondocs/6502alan-instruction-set.pdf">6502alan</a> assembly language. The compiler shows the resulting machine code, the concrete syntax tree, the abstract syntax tree, and the symbol table. To trace exactly what the compiler is doing, it logs what the scanner, the parser, the semantic analyzer, and the code generator does during compilation.</p>
+                <p>In another great class (<a href="http://labouseur.com/courses/compilers/">CMPT 432</a>) taught by <a href="http://labouseur.com/">Dr. Alan Labouseur</a>, I built Svegliator, a compiler that compiles a <a href="http://labouseur.com/courses/compilers/grammar.pdf">C-like language</a> into <a href="http://labouseur.com/commondocs/6502alan-instruction-set.pdf">6502alan</a> assembly language. The compiler shows the resulting machine code, the concrete syntax tree, the abstract syntax tree, and the symbol table. Just so you can trace exactly what the compiler is doing, it records each step of the scanner, the parser, the semantic analyzer, and the code generator during compilation.</p>
                 <div class="buttons">
                   <a href="http://labouseur.com/courses/compilers/compilers/svegliator/index.html" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">Demo</a>
                   <a href="https://github.com/justinsvegliato/svegliator" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored last">Code</a>
