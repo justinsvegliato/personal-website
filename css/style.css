@@ -87,13 +87,13 @@ figcaption {
 
 .mdl-mega-footer {
   text-align: center;
-  background-color: #0f0f0f;
+  background-color: #57315b;
 }
 
 #banner {
   height: 295px;
   padding-top: 105px;
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/banner.png);
   background-repeat: no-repeat;
   background-position: center center;
   text-align: center;
@@ -103,17 +103,15 @@ figcaption {
   font: 48px 'Roboto', 'Helvetica', sans-serif;
   line-height: 1;
   letter-spacing: 7px;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
   font-weight: bold;
   color: #fff;
 }
 
 #slogan {
   font: 22px 'Georgia', serif;
-  color: #bbc5f9;
+  color: #fff;
   letter-spacing: 1px;
   line-height: 1.75;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
   width: 60%;
   margin-left: auto;
   margin-right: auto;
@@ -123,9 +121,8 @@ figcaption {
 #email{
   color: #fff;
   margin-bottom: 15px;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
   letter-spacing: 2px;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 #about {
@@ -147,11 +144,15 @@ figcaption {
 }
 
 #banner, #education, #timeline, #projects, #miscellaneous {
-  background-color: #e6e5e5;
+  background-color: #e3dde6;
 }
 
 .highlight, .position {
   color: #c100bb !important;
+}
+
+.keyword {
+  color: #416885;
 }
 
 .honor, .degree, .author, .theme, .company {
@@ -182,11 +183,10 @@ figcaption {
   color: #fff;
   margin-right: 20px;
   font-size: 35px;
-  text-shadow: 0px 1px 1px rgba(0, 0, 0, .3);
 }
 
 .social-media-icon:hover {
-  color: #448aff;
+  color: #6aa29f;
 }
 
 .last {
@@ -244,12 +244,6 @@ figcaption {
 
 #miscellaneous-photo {
   width: 100%;
-}
-
-#copyright {
-  font: 16px 'Roboto', 'Helvetica', sans-serif;
-  color: #383838;
-  margin-bottom: 35px;
 }
 
 @media (max-width: 1024px) {
