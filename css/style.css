@@ -87,7 +87,7 @@ figcaption {
 
 .mdl-mega-footer {
   text-align: center;
-  background-color: #57315b;
+  background-color: #67196e;
 }
 
 #banner {
@@ -144,7 +144,7 @@ figcaption {
 }
 
 #banner, #education, #timeline, #projects, #miscellaneous {
-  background-color: #e3dde6;
+  background-color: #f1eef2;
 }
 
 .highlight, .position {
@@ -152,7 +152,7 @@ figcaption {
 }
 
 .keyword {
-  color: #416885;
+  color: #007b76;
 }
 
 .honor, .degree, .author, .theme, .company {
@@ -186,7 +186,7 @@ figcaption {
 }
 
 .social-media-icon:hover {
-  color: #6aa29f;
+  color: #448aff;
 }
 
 .last {
