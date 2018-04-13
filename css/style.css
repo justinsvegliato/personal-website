@@ -135,6 +135,10 @@ figcaption {
   background-color: #f1eef2;
 }
 
+#projects p, #research p, #about p, #miscellaneous p {
+  text-align: justify;
+}
+
 .highlight, .position {
   color: #c100bb !important;
 }
@@ -231,7 +235,7 @@ figcaption {
 }
 
 #miscellaneous-photo {
-  width: 100%;
+  width: 90%;
 }
 
 @media (max-width: 1024px) {
