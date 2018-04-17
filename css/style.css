@@ -121,6 +121,7 @@ figcaption {
 #photo {
   width: 210px;
   border-radius: 210px;
+  border: 2px #a8b7e3 solid;
 }
 
 #bio {
@@ -139,7 +140,7 @@ figcaption {
   text-align: justify;
 }
 
-.highlight, .position {
+.highlight, .position, .venue {
   color: #c100bb !important;
 }
 
@@ -273,7 +274,7 @@ figcaption {
     font-size: 2em;
   }
 
-  .degree, .date, .company, .highlight {
+  .degree, .date, .company, .highlight, .venue {
     display: block;
     width: 100% !important;
     text-align: left !important;
