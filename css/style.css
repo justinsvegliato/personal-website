@@ -153,6 +153,10 @@ figcaption {
   margin: 0px;
 }
 
+.author-highlight {
+  font-weight: 400;
+}
+
 .date {
   color: #3f51b5;
   padding-right: 20px;
