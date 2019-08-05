@@ -195,8 +195,13 @@ figcaption {
   font-weight: bold;
 }
 
+#autonomous-vehicle-photo {
+  height: 200px;
+  border: 2px solid #ccc;
+}
+
 #performance-profile-photo {
-  height: 270px;
+  height: 230px;
 }
 
 #pomdp-photo {
