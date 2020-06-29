@@ -21,6 +21,14 @@ figcaption {
   margin-top: 5px;
 }
 
+footer {
+  height: 100px;
+}
+
+hr {
+  margin: 5px;
+}
+
 ::-moz-selection {
   background-color: #6ab344;
   color: #fff;
@@ -44,6 +52,10 @@ figcaption {
 
 .section-body ul {
   margin-top: 0px;
+}
+
+.section-body h2 {
+  margin-bottom: 15px;
 }
 
 .section-body h2, .section-body h3, .section-body, .section-body p, .section-body li {
@@ -83,6 +95,7 @@ figcaption {
 .mdl-button {
   margin-right: 10px;
   margin-bottom: 13px;
+  text-transform: none;
 }
 
 .mdl-mega-footer {
@@ -105,7 +118,7 @@ figcaption {
   color: #fff;
 }
 
-#email{
+#email {
   color: #fff;
   margin-top: 12px;
   margin-bottom: 15px;
@@ -119,8 +132,8 @@ figcaption {
 }
 
 #photo {
-  width: 210px;
-  border-radius: 210px;
+  width: 190px;
+  border-radius: 190px;
   border: 2px #a8b7e3 solid;
 }
 
@@ -196,12 +209,25 @@ figcaption {
 }
 
 #autonomous-vehicle-photo {
-  height: 200px;
+  height: 180px;
   border: 2px solid #ccc;
 }
 
-#performance-profile-photo {
+#moralityjs-demonstration-photo {
+  height: 190px;
+  border: 2px solid #ccc;
+}
+
+#metareasoning-teaser-photo {
   height: 230px;
+}
+
+#competence-awareness-algorithm-photo {
+  height: 220px;
+}
+
+#state-estimation-teaser-photo {
+  height: 210px;
 }
 
 #pomdp-photo {
@@ -213,34 +239,34 @@ figcaption {
 }
 
 #opensr-test-photo {
-  height: 240px;
+  height: 220px;
   border: 2px solid #ccc;
 }
 
 #lstm-photo {
-  height: 270px;
+  height: 230px;
 }
 
 #mdp-photo {
-  height: 245px;
+  height: 210px;
 }
 
 #heuristic-search-photo {
-  height: 220px;
+  height: 190px;
 }
 
 #minimax-photo {
-  height: 210px;
+  height: 190px;
   margin-bottom: 10px;
 }
 
 #operating-system-photo {
-  height: 220px;
+  height: 210px;
   border: 2px solid #ccc;
 }
 
 #compiler-photo {
-  height: 215px;
+  height: 210px;
   border: 2px solid #ccc;
 }
 
@@ -283,7 +309,7 @@ figcaption {
     font-size: 2em;
   }
 
-  .degree, .date, .company, .highlight, .venue {
+  .honor, .degree, .date, .company, .highlight, .venue {
     display: block;
     width: 100% !important;
     text-align: left !important;
