@@ -161,7 +161,7 @@ hr {
   color: #007b76;
 }
 
-.honor, .degree, .author, .theme, .company {
+.honor, .degree, .author, .theme, .company, .topic {
   color: #448aff;
   margin: 0px;
 }
@@ -209,7 +209,7 @@ hr {
 }
 
 #autonomous-vehicle-photo {
-  height: 180px;
+  height: 183px;
   border: 2px solid #ccc;
 }
 
@@ -219,11 +219,11 @@ hr {
 }
 
 #metareasoning-teaser-photo {
-  height: 230px;
+  height: 250px;
 }
 
 #competence-awareness-algorithm-photo {
-  height: 220px;
+  height: 230px;
 }
 
 #state-estimation-teaser-photo {
@@ -252,7 +252,7 @@ hr {
 }
 
 #heuristic-search-photo {
-  height: 190px;
+  height: 210px;
 }
 
 #minimax-photo {
