@@ -1,0 +1,128 @@
+{{#> base projects="true"}}
+  {{#*inline "content-block"}}
+    <div class="section primary-section">
+      <div class="section-body">
+        <h2>Deep Jammer</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>In <a href="https://compsci697l.github.io/">Erik Learned-Miller's Deep Learning class</a>, we built Deep Jammer, a music generator that learns how to compose classical piano music from hundreds of classical piano pieces. Deep Jammer uses deep learning, specifically two LSTMs, to learn the spatial and temporal patterns of classical piano music. To evaluate Deep Jammer, we conducted a survey of over 50 participants where the best piece by Deep Jammer scored a 7.5 compared to a famous piece by Bach that scored an 8.1.</p>
+
+            <div class="buttons">
+              <a href="https://medium.com/@justinsvegliato/can-a-deep-neural-network-compose-music-f89b6ba4978d" class="mdl-button mdl-button--raised mdl-button--colored">Blog</a>
+              <a href="pdf/deep-jammer-report.pdf" class="mdl-button mdl-button--raised mdl-button--colored">Report</a>
+              <a href="pdf/deep-jammer-poster.pdf" class="mdl-button mdl-button--raised mdl-button--colored">Poster</a>
+              <a href="https://github.com/justinsvegliato/deep-jammer" class="mdl-button mdl-button--raised mdl-button--colored last">Code</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo" src="img/projects/lstm.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section secondary-section">
+      <div class="section-body">
+        <h2>Logos</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>As a side project to learn more about automated decision making, I built Logos, a library that can solve MDPs. Logos offers dynamic programming methods (like value iteration) and reinforcement learning methods (like TD learning). Fortunately, Logos has been the basis for the decision making in many autonomous systems that I've worked on, such as self-driving vehicles, planetary navigation rovers, and earth observation satellites.</p>
+
+            <div class="buttons">
+              <a href="https://github.com/justinsvegliato/logos" class="mdl-button mdl-button--raised mdl-button--colored last">Code</a>
+            </div>
+          </div>
+ 
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo outlined-photo" src="img/projects/td-learning.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section primary-section">
+      <div class="section-body">
+        <h2>Deep Rainbow</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>In Ben Carle's AI class, we built Deep Rainbow, an optimal Rubik’s Cube solver based on <a href="https://www.aaai.org/Papers/AAAI/1997/AAAI97-109.pdf">Richard Korf's approach</a>. Deep Rainbow runs iterative deepening A* using an admissible max-heuristic function over three disjoint pattern databases that correspond to the set of edge cubees and two different sets of corner cubees. In just a few minutes, Deep Rainbow solves Rubik's cube that are 15 steps away or less from being solved.</p>
+
+            <div class="buttons">
+              <a href="https://github.com/justinsvegliato/deep-rainbow" class="mdl-button mdl-button--raised mdl-button--colored last">Code</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo" src="img/projects/astar-search.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section secondary-section">
+      <div class="section-body">
+        <h2>Shallow Blue</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>In Ben Carle's AI class, we built Shallow Blue, a chess agent that uses minimax with alpha-beta pruning. Shallow blue uses an evaluation function with many aspects of chess like piece development, material balance, mobility, and attacked squares. Luckily, Shallow Blue won a chess tournament with over fifteen teams that built their own chess agents.</p>
+
+            <div class="buttons">
+              <a href="https://github.com/justinsvegliato/shallow-blue" class="mdl-button mdl-button--raised mdl-button--colored last">Code</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo" src="img/projects/minimax.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section primary-section">
+      <div class="section-body">
+        <h2>SvegOS</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">            
+            <p>In <a href="http://labouseur.com/courses/os/">Alan Labouseur's Operating Systems class</a>, I built SvegOS, a browser-based operating system. Like any operating system, SvegOs can manage files (<span class="code">create</span>, <span class="code">read</span>, <span class="code">update</span>, <span class="code">delete</span>, and <span class="code">ls</span>), load programs (<span class="code">load</span>), and manage processes (<span class="code">run</span>, <span class="code">ps</span>, and <span class="code">kill</span>). For debugging purposes, SvegOS has an interface that shows the state of the CPU registers, the memory, the hard drive, and each process as it's running.</p>
+
+            <div class="buttons">
+              <a href="http://labouseur.com/commondocs/operating-systems/SvegOS/public_html/index.html" class="mdl-button mdl-button--raised mdl-button--colored">Demo</a>
+              <a href="https://github.com/justinsvegliato/sveg-os" class="mdl-button mdl-button--raised mdl-button--colored last">Code</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo outlined-photo" src="img/projects/operating-system.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section secondary-section">
+      <div class="section-body">
+        <h2>Svegliator</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>In <a href="http://labouseur.com/courses/compilers/">Alan Labouseur's Compilers class</a>, I built Svegliator, a browser-based compiler that compiles a <a href="http://labouseur.com/courses/compilers/grammar.pdf">C-like language</a> into <a href="http://labouseur.com/commondocs/6502alan-instruction-set.pdf">6502alan</a> assembly language. Svegliator shows the machine code, the concrete syntax tree, the abstract syntax tree, and the symbol table after compilation. To follow compilation, Svegliator records every step of the scanner, the parser, the semantic analyzer, and the code generator as it's compiling.</p>
+
+            <div class="buttons">
+              <a href="http://labouseur.com/courses/compilers/compilers/svegliator/index.html" class="mdl-button mdl-button--raised mdl-button--colored">Demo</a>
+              <a href="https://github.com/justinsvegliato/svegliator" class="mdl-button mdl-button--raised mdl-button--colored last">Code</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo outlined-photo" src="img/projects/compiler.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/inline}}
+{{/base}}

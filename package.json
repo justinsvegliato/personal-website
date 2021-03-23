@@ -1,0 +1,12 @@
+{
+  "name": "justin-svegliato-personal-website",
+  "version": "1.0.0",
+  "description": "Justin Svegliato's Personal Website",
+  "devDependencies": {
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-filter": "^6.0.0",
+    "gulp-rename": "^1.2.2"
+  }
+}

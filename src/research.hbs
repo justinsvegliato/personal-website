@@ -1,0 +1,131 @@
+{{#> base research="true"}}
+  {{#*inline "content-block"}}
+    <div class="section primary-section">
+      <div class="section-body">
+        <h2>Ethically Compliance</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>Autonomous systems need the ability to comply with a given ethical theory since they can have a significant impact on society. However, while moral philosophers have studied ethical theories for thousands of years, they're still difficult to implement by anyone who works on autonomous systems. We therefore propose an ethically compliant autonomous system that optimizes completing a task while following an ethical framework.</p>
+
+            <div class="buttons">
+              <a href="pdf/SNZaaai21.pdf" class="mdl-button mdl-button--raised mdl-button--colored">AAAI 2021</a>
+              <a href="pdf/SNZaisafety20b.pdf" class="mdl-button mdl-button--raised mdl-button--colored">AISafety 2020</a>
+              <a href="pdf/SNZecai20.pdf" class="mdl-button mdl-button--raised mdl-button--colored">ECAI 2020</a>
+              <a href="https://moralityjs.com/" class="mdl-button mdl-button--raised mdl-button--colored">Website</a>
+              <a href="https://www.npmjs.com/package/morality" class="mdl-button mdl-button--raised mdl-button--colored">Library</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo outlined-photo" src="img/research/moralityjs-demonstration.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section secondary-section">
+      <div class="section-body">
+        <h2>Exception Recovery</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>Autonomous systems use decision-making models that make simplifying assumptions to reduce the complexity of the real world. However, given these assumptions, autonomous systems can encounter different exceptions. We therefore propose an introspective autonomous system that resolves exceptions by interleaving regular decision making with exception handling using a belief over whether there are any exceptions.</p>
+
+            <div class="buttons">
+              <a href="pdf/SWWBZiros19.pdf" class="mdl-button mdl-button--raised mdl-button--colored">IROS 2019</a>
+              <a href="pdf/US10649453.pdf" class="mdl-button mdl-button--raised mdl-button--colored">Patent</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo outlined-photo" src="img/research/autonomous-vehicle.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+        <div class="section primary-section">
+      <div class="section-body">
+        <h2>Partial State Abstractions</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>Autonomous systems often use approximate planners that rely on state abstractions to solve large MDPs in real-time decision-making problems. However, these planners eliminate details needed to produce effective behavior in autonomous systems. We therefore propose a partially abstract MDP with a set of abstract states that each compress a set of ground states to condense irrelevant details and a set of ground states that expand from a set of abstract states to retain relevant details.</p>
+
+            <div class="buttons">
+              <a class="mdl-button mdl-button--raised mdl-button--colored mdl-button--disabled">ICRA 2021</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo" src="img/research/space-observation-teaser.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section secondary-section">
+      <div class="section-body">
+        <h2>Optimal Stopping</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>Autonomous systems use anytime planners that offer a trade-off between plan quality and computation time in real-time decision-making problems. However, to optimize this trade-off, an autonomous system must decide when to interrupt an anytime planner (i.e., stop thinking) and act on the current plan (i.e., start doing). We therefore propose two metareasoning techniques that use online performance prediction and reinforcement learning to estimate the optimal stopping point of an anytime planner.</p>
+
+            <div class="buttons">
+              <a href="pdf/SSZicra20.pdf" class="mdl-button mdl-button--raised mdl-button--colored">ICRA 2020</a>
+              <a href="pdf/SWZijcai18.pdf" class="mdl-button mdl-button--raised mdl-button--colored">IJCAI 2018</a>
+              <a href="pdf/SZaegap18.pdf" class="mdl-button mdl-button--raised mdl-button--colored">AEGAP 2018</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo" src="img/research/metareasoning-teaser.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section primary-section">
+      <div class="section-body">
+        <h2>Agent-Aware State Estimation</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>Autonomous systems often operate in environments where their behavior and the behavior of other agents is influenced by a signal. However, if autonomous systems can't observe the signal directly, the consequences can be disastrous. We therefore develop an approach to agent-aware state estimation that enables an autonomous system to indirectly observe a signal by exploiting the behavior of other agents in the enviornment.</p>
+
+            <div class="buttons">
+              <a href="pdf/PKSZseudw20.pdf" class="mdl-button mdl-button--raised mdl-button--colored">DynamicSlam 2020</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo" src="img/research/state-estimation-teaser.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section secondary-section">
+      <div class="section-body">
+        <h2>Competence Awareness</h2>
+
+        <div class="mdl-grid">
+          <div class="mdl-cell mdl-cell--7-col">
+            <p>Autonomous systems cannot always complete their task and can even act dangerously because they use limited decision-making models. Ideally, to overcome these problems, autonomous systems should rely on human assistance if necessary. We therefore propose a competence-aware system that learns and improves its level of autonomy, each requiring a different degree of human assistance, by learning through experience.</p>
+
+            <div class="buttons">
+              <a href="pdf/BSZWWarea20.pdf" class="mdl-button mdl-button--raised mdl-button--colored">AREA 2020</a>
+              <a href="pdf/BSWWBZaamas20.pdf" class="mdl-button mdl-button--raised mdl-button--colored">AAMAS 2020</a>
+            </div>
+          </div>
+
+          <div class="mdl-cell mdl-cell--5-col mdl-typography--text-center">
+            <figure><img class="featured-photo outlined-photo" src="img/research/competence-awareness-algorithm.png" /></figure>
+          </div>
+        </div>
+      </div>
+    </div>
+  {{/inline}}
+{{/base}}

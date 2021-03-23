@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edges">
+    <meta name="description" content="Justin Svegliato, a PhD student at UMass Amherst who builds autonomous systems that reason and learn.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    
+    <title>Justin Svegliato</title>
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      ga('create', 'UA-102477794-1', 'auto');
+      ga('send', 'pageview');
+    </script>
+  </head>
+  
+  <body>
+    <div class="mdl-layout mdl-js-layout">
+      <div id="banner">
+        <div class="mdl-grid mdl-grid--no-spacing">
+          <div id="left-banner" class="mdl-cell mdl-cell--5-col">
+            <img id="photo" src="img/photo.jpg">
+          </div>
+
+          <div id="right-banner" class="mdl-cell mdl-cell--5-col">
+            <div id="name">Justin Svegliato</div>
+            <div id="email">jsvegliato -at- cs -dot- umass -dot- edu</div>
+            <div id="media-icons">
+              <a target="_blank" href="https://medium.com/@justinsvegliato">
+                <i id="medium-icon" class="fab fa-medium-m media-icon" aria-hidden="true"></i>
+              </a>
+
+              <a target="_blank" href="https://www.strava.com/athletes/365236">
+                <i id="strava-icon" class="fab fa-strava media-icon" aria-hidden="true"></i>
+              </a>
+
+              <a target="_blank" href="https://github.com/justinsvegliato">
+                <i id="github-icon" class="fab fa-github media-icon" aria-hidden="true"></i>
+              </a>
+
+              <a target="_blank" href="https://scholar.google.com/citations?user=3Orv6wUAAAAJ&hl=en">
+                <i id="google-scholar-icon" class="ai ai-google-scholar media-icon"></i>
+              </a>
+              
+              <a target="_blank" href="pdf/justin_svegliato_cv.pdf">
+                <i id="cv-icon" class="fas fa-file-alt media-icon last" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <header class="mdl-layout__header mdl-layout__header--transparent">
+          <div class="mdl-layout__header-row">
+            <nav class="mdl-navigation">
+              <a class="mdl-navigation__link {{#if index}}mdl-navigation__active-link{{/if}}" href="index.html">About</a>
+              <a class="mdl-navigation__link {{#if research}}mdl-navigation__active-link{{/if}}" href="research.html">Research</a>
+              <a class="mdl-navigation__link {{#if honors}}mdl-navigation__active-link{{/if}}" href="honors.html">Honors</a>
+              <a class="mdl-navigation__link {{#if projects}}mdl-navigation__active-link{{/if}}" href="projects.html">Projects</a>
+              <a class="mdl-navigation__link {{#if fun}}mdl-navigation__active-link{{/if}}" href="fun.html">Fun</a>
+            </nav>
+          </div>
+        </header>
+      </div>
+
+      <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Justin Svegliato</span>
+        <nav class="mdl-navigation">
+            <a class="mdl-navigation__link {{#if index}}mdl-navigation__active-link{{/if}}" href="index.html">About</a>
+            <a class="mdl-navigation__link {{#if research}}mdl-navigation__active-link{{/if}}" href="research.html">Research</a>
+            <a class="mdl-navigation__link {{#if honors}}mdl-navigation__active-link{{/if}}" href="honors.html">Honors</a>
+            <a class="mdl-navigation__link {{#if projects}}mdl-navigation__active-link{{/if}}" href="projects.html">Projects</a>
+            <a class="mdl-navigation__link {{#if fun}}mdl-navigation__active-link{{/if}}" href="fun.html">Fun</a>
+        </nav>
+      </div>
+
+      {{#> content-block}}
+      {{/content-block}}
+
+      <footer class="mdl-mega-footer"></footer>
+    </div>
+  </body>
+</html>

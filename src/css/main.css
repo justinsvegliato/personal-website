@@ -1,0 +1,289 @@
+a {
+	text-decoration: none;
+	color: #448aff;
+	font-weight: 400;
+}
+figure {
+	margin: 0px !important;
+}
+#banner {
+	padding-top: 40px;
+	padding-bottom: 10px;
+	background-image: url(../img/banner.png);
+	background-repeat: no-repeat;
+	background-position: center 70%;
+	text-align: center;
+}
+#left-banner {
+	text-align: right;
+}
+#right-banner {
+	text-align: left;
+	padding-top: 20px;
+	padding-left: 35px;
+}
+#name {
+	font: 48px 'Helvetica', sans-serif;
+	color: #fff;
+}
+#email {
+	color: #fff;
+	margin-bottom: 8px;
+	font-size: 18px;
+}
+#photo {
+	width: 150px;
+	border-radius: 190px;
+	border: 2px #fff solid;
+}
+#questions {
+	padding-left: 0px;
+    padding-right: 0px;
+}
+#questions h4 {
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-weight: 100;
+	font-size: 20px;
+}
+#questions .mdl-cell {
+	padding-left: 12px;
+    padding-right: 12px;
+}
+.question {
+	margin-bottom: 10px;
+}
+.question:last-child {
+	margin-bottom: 0px;
+}
+.morality-highlight {
+	color: #f04124;
+}
+.reliability-highlight {
+	color: #e99002;
+}
+.efficiency-highlight {
+	color: #43ac6a;
+}
+.mdl-layout__header-row {
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.mdl-navigation__link {
+	border: 2px #fff solid !important;
+	padding-top: 5px !important;
+	padding-bottom: 5px !important;
+	line-height: 1 !important;
+	font-size: 24px !important;
+	margin-right: 30px;
+	opacity: 0.6;
+}
+.mdl-navigation__active-link {
+	opacity: 1.0;
+}
+.mdl-navigation__link:hover {
+	opacity: 1.0;
+}
+.mdl-navigation__link:last-child {
+	margin-right: 0px;
+}
+.mdl-layout__drawer {
+	background-color: #fff;
+}
+.mdl-layout-title {
+	text-align: center;
+	padding-left: 0px !important;
+	padding-right: 0px !important;
+	font-size: 30px;
+    color: #fff;
+    padding-top: 45px;
+    padding-bottom: 5px;
+    background-image: url(../img/banner.png);
+    background-repeat: no-repeat;
+    background-position: 69% 100%;
+}
+.mdl-layout__drawer .mdl-navigation__link {
+	border: none !important;
+	line-height: 2 !important;
+}
+.section {
+	padding-top: 5px;
+	padding-bottom: 40px;
+}
+.section-body {
+	margin: auto;
+	width: 75%;
+	max-width: 1200px;
+}
+.section-body h2 {
+	font-size: 28px;
+	margin-bottom: 10px;
+}
+.section-body h5 {
+	margin-top: 15px;
+	margin-bottom: 0px;
+	font-weight: 300;
+}
+.section-body, .section-body p {
+	font-size: 18px;
+	color: #383a3c;
+	font-weight: 300;
+}
+.mdl-button {
+	margin-right: 10px;
+	margin-bottom: 10px;
+	text-transform: none;
+}
+.mdl-button:active, .mdl-button:after {
+	box-shadow: none;
+	transform: none;
+}
+.mdl-button--raised {
+	box-shadow: none;
+	font-weight: 600;
+}
+.mdl-mega-footer {
+	text-align: center;
+	background-color: #1b1244;
+	padding: 70px;
+}
+#education {
+	line-height: 24px;
+}
+.symbol-separator {
+	font-weight: 700;
+}
+.primary-section {
+	background-color: #fff;
+}
+.secondary-section {
+	background-color: #f3f3f3;
+}
+.highlight, .position {
+	color: #c100bb !important;
+}
+.honor, .degree, .company, .topic {
+	color: #448aff !important;
+}
+.date, .area {
+	color: #3f51b5;
+	padding-right: 20px;
+	text-align: right;
+}
+.entry {
+	margin-bottom: 10px;
+}
+.entry:last-child {
+	margin-bottom: 0px;
+}
+.code {
+	font-family: Consolas, Monaco, 'Andale Mono', monospace;
+	font-size: 16px;
+}
+.media-icon {
+	color: #fff;
+	margin-right: 20px;
+	font-size: 35px;
+}
+#google-scholar-icon {
+	position: relative;
+	top: 3px;
+	font-size: 40px;
+}
+.media-icon:hover {
+	color: #448aff;
+}
+.featured-photo {
+  width: 300px;
+}
+.outlined-photo {
+  border: 1px solid #a2a2a2;
+}
+.square-photo {
+	width: 100%;
+	max-width: 250px;
+	max-height: 250px;
+	overflow: hidden;
+}
+@media (max-width: 1024px) {
+	figure {
+		text-align: center;
+	}
+	figure img {
+		width: 100% !important;
+		height: auto !important;
+		max-width: 300px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	#name {
+		font-size: 36px;
+	}
+	#email {
+		margin-top: 5px;
+		font-size: 16px;
+	}
+	#banner {
+		padding-top: 10px;
+		padding-bottom: 30px;
+	}
+	#left-banner, #right-banner {
+		width: 100%;
+		text-align: center;
+		margin-left: auto;
+		margin-right: auto;
+		padding: 0px;
+	}
+	#questions {
+		margin-top: -20px;
+	}
+	#questions h4 {
+		text-align: left;
+	}
+	#questions .mdl-cell {
+		width: 100%;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.section-body {
+		width: 85%;
+	}
+	#photo {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	#honors .mdl-cell {
+		margin-bottom: 0px;
+	}
+	#google-scholar-icon {
+		font-size: 35px;
+	}
+	.media-icon {
+		font-size: 2em;
+	}
+	.honor, .degree, .date, .area, .company, .highlight {
+		display: block;
+		width: 100% !important;
+		text-align: left !important;
+	}
+	.entry {
+		margin-bottom: 20px;
+	}
+	.symbol-separator, .preposition-separator {
+		display: none;
+	}
+	.buttons {
+		text-align: center;
+	}
+	.mdl-cell {
+		width: 100%;
+	}
+	.mdl-cell--tile {
+		width: 45%;
+	}
+	.mdl-layout__drawer-button {
+		color: #fff;
+	}
+}
