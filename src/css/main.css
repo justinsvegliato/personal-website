@@ -11,7 +11,8 @@ figure {
 	padding-bottom: 10px;
 	background-image: url(../img/banner.png);
 	background-repeat: no-repeat;
-	background-position: center 70%;
+	background-position: center 100%;
+	background-size: cover;
 	text-align: center;
 }
 #left-banner {
@@ -19,12 +20,13 @@ figure {
 }
 #right-banner {
 	text-align: left;
-	padding-top: 20px;
+	padding-top: 10px;
 	padding-left: 35px;
 }
 #name {
 	font: 48px 'Helvetica', sans-serif;
 	color: #fff;
+	margin-bottom: 5px;
 }
 #email {
 	color: #fff;
@@ -91,6 +93,7 @@ figure {
 }
 .mdl-layout__drawer {
 	background-color: #fff;
+	border-right: none;
 }
 .mdl-layout-title {
 	text-align: center;
@@ -99,10 +102,11 @@ figure {
 	font-size: 30px;
     color: #fff;
     padding-top: 45px;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
     background-image: url(../img/banner.png);
     background-repeat: no-repeat;
-    background-position: 69% 100%;
+    background-position: 0% 100%;
+	background-size: 420%;
 }
 .mdl-layout__drawer .mdl-navigation__link {
 	border: none !important;
@@ -155,6 +159,10 @@ figure {
 .symbol-separator {
 	font-weight: 700;
 }
+.email-separator {
+	font-size: 13px;
+	opacity: 0.9;
+}
 .primary-section {
 	background-color: #fff;
 }
@@ -204,7 +212,7 @@ figure {
 .square-photo {
 	width: 100%;
 	max-width: 250px;
-	max-height: 250px;
+	height: 250px;
 	overflow: hidden;
 }
 @media (max-width: 1024px) {
@@ -280,8 +288,10 @@ figure {
 	.mdl-cell {
 		width: 100%;
 	}
-	.mdl-cell--tile {
+	.mdl-cell__tile {
 		width: 45%;
+		margin-left: 2.5%;
+		margin-right: 2.5%;
 	}
 	.mdl-layout__drawer-button {
 		color: #fff;
