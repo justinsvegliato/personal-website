@@ -14,6 +14,7 @@ figure {
 	background-position: center 100%;
 	background-size: cover;
 	text-align: center;
+	display: block;
 }
 #left-banner {
 	text-align: right;
