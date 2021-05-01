@@ -39,6 +39,14 @@ figure {
 	border-radius: 190px;
 	border: 2px #fff solid;
 }
+#bio {
+	margin-top: 40px;
+}
+#alert {
+	background-color: #fff9c4;
+    padding: 15px;
+	text-align: center;
+}
 #questions {
 	padding-left: 0px;
     padding-right: 0px;
