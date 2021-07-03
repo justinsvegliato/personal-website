@@ -215,6 +215,9 @@ figure {
 	top: 3px;
 	font-size: 40px;
 }
+#twitter-icon {
+	margin-right: 17px !important;
+}
 .featured-photo {
   width: 300px;
 }
