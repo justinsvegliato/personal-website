@@ -27,7 +27,7 @@ figure {
 #name {
 	font: 48px 'Helvetica', sans-serif;
 	color: #fff;
-	margin-bottom: 5px;
+	margin-bottom: 8px;
 }
 #email {
 	color: #fff;
@@ -215,8 +215,16 @@ figure {
 	top: 3px;
 	font-size: 40px;
 }
+#cv-icon {
+	position: relative;
+	top: 4px;
+	font-size: 43px;
+}
 #twitter-icon {
 	margin-right: 17px !important;
+}
+#research-statement-icon {
+	font-size: 31px;
 }
 .featured-photo {
   width: 300px;
@@ -283,8 +291,14 @@ figure {
 	#google-scholar-icon {
 		font-size: 35px;
 	}
+	#cv-icon {
+		font-size: 42px;
+	}
 	.media-icon {
 		font-size: 2em;
+	}
+	#research-statement-icon {
+		font-size: 1.9em;
 	}
 	.honor, .degree, .date, .area, .company, .highlight {
 		display: block;
